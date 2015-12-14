@@ -1,7 +1,6 @@
 {
-  "name": "scene-puckman",
+  "name": "scene-welcome",
   "version": "1.0.0",
-  "description": "Pacman in SceneVR",
   "main": "index.js",
   "scripts": {
     "start": "scenevr .",
@@ -9,15 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/scenevr/puckman.git"
+    "url": "https://github.com/scenevr/welcome.git"
   },
   "author": "bnolan@gmail.com",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/scenevr/puckman/issues"
-  },
-  "homepage": "https://github.com/scenevr/puckman",
   "dependencies": {
-    "scenevr": "^1.7.0"
+    "scenevr": "^1.8.0"
   }
 }
