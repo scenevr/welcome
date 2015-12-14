@@ -1,0 +1,24 @@
+<scene>
+
+  <spawn position="0 0 10" />
+
+  <skybox style="color: linear-gradient(#fff, #0af)" />
+
+  <billboard id="hello" position="0 1.5 0" scale="3 3 0.2"><![CDATA[
+      <p style="font-size: 1.5em">
+        Welcome to virtual reality!
+        <br />
+        <br />
+        This is <b>HTML</b> on a billboard. Feel free to edit it!
+      </p>
+
+      <center>
+        <img src="/images/chur.png" />
+      </center>
+  ]]></billboard>
+
+  <box position="4 2.5 0" scale="1 5 1" rotation="0 -0.78 0" style="color: red" />
+  <box position="-4 2.5 0" scale="1 5 1" rotation="0 0.78 0" style="color: blue" />
+
+
+</scene>

@@ -1,0 +1,21 @@
+<!--
+  
+    Hello world example. Uses a text model generated in blender
+    and exported to an .obj file. Change the color to blue!
+    
+-->
+
+<scene>
+
+  <!-- This is where you start when the scene loads -->  
+  <spawn position="0 0 0" />
+
+  <!-- The sky, a gradient from white to silver -->
+  <skybox style="color: linear-gradient(#ffffff, #cccccc)" />
+
+  <!-- 3d model created in blender and exported with normals -->
+  <model src="/models/hello.obj" rotation="0 0 0" style="collision: mesh; color: #0f3" position="0 0 -10" />
+
+  <!-- Oh the huge manatee! -->
+  <model src="/models/manatee.obj" position="0 5 -10" style="color: #acf" scale="3 3 3 " rotation="0 1.57 0" />
+</scene>

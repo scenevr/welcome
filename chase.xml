@@ -1,0 +1,34 @@
+<!--
+  A box that runs away from you when you click on it.
+-->
+
+<scene>
+  <spawn position="0 0 10" />
+  <box id="scaredy" style="color: #ffaa00" position='0 0.5 1' />
+
+  <skybox style="color: linear-gradient(#fff, #acf)" />
+
+  <billboard position="-2 1 0">
+    <![CDATA[
+      <center style="margin-top: 100px; color: #555; font-size: 2em">
+        This box is scared of being touched.<br /><br />
+        <b>Click it to chase it away</b>.
+      </center>
+    ]]>
+  </billboard>
+
+  <script>
+    document.addEventListener("ready", function(event) {
+      var el = document.getElementById("scaredy");
+      
+      // How far away will it run?
+      var distance = 2.0;
+      
+      el.addEventListener("click", function(e){
+        var vector = e.player.position.clone().sub(el.position).normalize().multiplyScalar(-distance);
+        vector.setY(0);
+        el.position.add(vector);
+      });
+    });
+  </script>
+</scene>

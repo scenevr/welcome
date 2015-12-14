@@ -1,0 +1,24 @@
+<scene>
+  <spawn position="0 0 10" />
+  
+  <box class="floater" position="-2 1 0" scale="1 1 1" style="color: #3f0" />
+  <box class="floater" position="0 1 0" scale="1 1 1" style="color: #0af" />
+  <box class="floater" position="2 1 0" scale="1 1 1" style="color: #f0a" />
+  
+  <script>
+    var boxes = document.querySelectorAll('.floater');
+    var i = 0;
+
+    setInterval(function () {
+      var b = 0;
+      
+      boxes.forEach(function (box) {
+        box.position.y = Math.sin(i + b) * 1.5 + 2;
+        b += 0.5;
+      });
+      
+      i += 0.3;
+    }, 100);
+  </script>
+  
+</scene>
